@@ -2,7 +2,17 @@
 export default {
     data() {
         return {
-
+            navLinks: [
+                    "CHARACTERS",
+                    "COMICS",
+                    "MOVIES",
+                    "TV",
+                    "GAMES",
+                    "COLLECTIBLES",
+                    "FANS",
+                    "NEWS",
+                    "SHOP",
+            ]
         }
     }
 }
@@ -10,8 +20,18 @@ export default {
 
 <template>
     <header>
-        <section id="navbar">
+        <section id="navbar" class="row container">
+            <div class="div-logo">
+                <a><img src="../assets/img/dc-logo.png" alt="dc main logo"></a>
+            </div>
 
+            <div class="div-ul">
+                <ul class="row">
+                    <li v-for="navItem in navLinks">
+                        <a href="#">{{ navItem }}</a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </header>
 </template>
@@ -20,5 +40,34 @@ export default {
 section {
     height: 150px;
     background-color: red;
+    align-items: center;
+
+    .div-logo {
+        width: 40%;
+
+        img {
+            cursor: pointer;
+            margin-left: 20px
+        }
+    }
+
+    .div-ul {
+        width: 60%;
+        font-weight: bold;
+
+        li {
+            margin-right: 2rem;
+
+            a {
+                padding-bottom: 60px;
+
+                &:hover {
+                color: #0C7CEC;
+                border-bottom: 5px solid #0C7CEC;
+                }
+
+            }
+        }
+    }
 }
 </style>

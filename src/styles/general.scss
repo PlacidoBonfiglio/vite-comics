@@ -8,6 +8,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -15,4 +20,12 @@ a {
 
 img {
     max-width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
 }
