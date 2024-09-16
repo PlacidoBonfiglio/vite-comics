@@ -12,7 +12,7 @@ export default {
     <main>
         <section>
             <h2>
-                <-- Content goes there -->
+                <-- Content goes here -->
             </h2>
         </section>
     </main>

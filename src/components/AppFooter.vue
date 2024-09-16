@@ -10,8 +10,107 @@ export default {
 
 <template>
     <footer>
-        <section id="info" class="container">
+        <section id="info" class="container row">
+            <div class="info-box row">
+                <div class="row cols">
+                    <div>
+                        <h2>DC COMICS</h2>
 
+                        <ul>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                        </ul>
+
+                        <h2>SHOP</h2>
+
+                        <ul>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2>DC</h2>
+
+                        <ul>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2>SITES</h2>
+
+                        <ul>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                            <li>
+                                <a href="#">blablabla</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo-bg">
+                <img src="../assets/img/dc-logo-bg.png" alt="">
+            </div>
         </section>
 
         <section id="links">
@@ -61,6 +160,39 @@ footer {
     /* ! INFO */
     #info {
         min-height: 400px;
+        padding: 50px 20px;
+
+        .info-box {
+            flex-basis: 60%;
+
+            .cols {
+                width: calc(100% / 3);
+            
+                h2 {
+                    color: white;
+                    margin-bottom: 20px;
+                    margin-right: 60px;
+                }
+
+                li:last-child {
+                    margin-bottom: 30px;
+                }
+
+                a {
+                    color: grey;
+                    line-height: 25px;
+
+                    &:hover {
+                        color: white;
+                        border-bottom: 1px solid white;
+                    }
+                }
+            }
+        }
+
+        .logo-bg {
+            flex-basis: 40%;
+        }
     }
 
 
@@ -89,6 +221,7 @@ footer {
                 }
             }
 
+            /* ! SOCIAL */
             .social {
                 width: 50%;
                 justify-content: end;
