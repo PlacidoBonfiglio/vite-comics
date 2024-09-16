@@ -56,18 +56,14 @@ section {
 
         ul {
             flex-wrap: wrap;
+            justify-content: space-between;
 
-            li {
-            margin-right: 2rem;
+            a {
+                padding-bottom: 62px;
 
-                a {
-                    padding-bottom: 60px;
-
-                    &:hover {
-                    color: #0C7CEC;
-                    border-bottom: 5px solid #0C7CEC;
-                    }
-
+                &:hover {
+                color: #0C7CEC;
+                border-bottom: 5px solid #0C7CEC;
                 }
             }
         }

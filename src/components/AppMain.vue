@@ -10,10 +10,22 @@ export default {
 
 <template>
     <main>
-        <h1>Main</h1>
+        <section>
+            <h2>
+                <-- Content goes there -->
+            </h2>
+        </section>
     </main>
 </template>
 
 <style scoped>
+    section {
+        text-align: center;
+        background-color: #272727;
 
+        h2 {
+            color: white;
+            padding: 80px;
+        }
+    }
 </style>
