@@ -10,12 +10,15 @@ export default {
 
 <template>
     <header>
-        <h1>
-            Header
-        </h1>
+        <section id="navbar">
+
+        </section>
     </header>
 </template>
 
 <style scoped>
-
+section {
+    height: 150px;
+    background-color: red;
+}
 </style>
