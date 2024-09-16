@@ -2,6 +2,7 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
+import AppBonus from './components/AppBonus.vue';
 
 export default {
   data() {
@@ -12,6 +13,7 @@ export default {
   components: {
     AppHeader,
     AppMain,
+    AppBonus,
     AppFooter
   }
 }
@@ -21,6 +23,7 @@ export default {
 <template>
   <AppHeader/>
   <AppMain/>
+  <AppBonus/>
   <AppFooter/>
 </template>
 
