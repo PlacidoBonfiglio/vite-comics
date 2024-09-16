@@ -39,11 +39,10 @@ export default {
 <style scoped>
 section {
     height: 150px;
-    background-color: red;
     align-items: center;
 
     .div-logo {
-        width: 40%;
+        width: 30%;
 
         img {
             cursor: pointer;
@@ -52,20 +51,24 @@ section {
     }
 
     .div-ul {
-        width: 60%;
+        width: 70%;
         font-weight: bold;
 
-        li {
+        ul {
+            flex-wrap: wrap;
+
+            li {
             margin-right: 2rem;
 
-            a {
-                padding-bottom: 60px;
+                a {
+                    padding-bottom: 60px;
 
-                &:hover {
-                color: #0C7CEC;
-                border-bottom: 5px solid #0C7CEC;
+                    &:hover {
+                    color: #0C7CEC;
+                    border-bottom: 5px solid #0C7CEC;
+                    }
+
                 }
-
             }
         }
     }
