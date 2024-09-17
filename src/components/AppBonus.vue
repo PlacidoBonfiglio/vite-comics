@@ -59,6 +59,7 @@ export default {
             height: 200px;
             justify-content: space-around;
             align-items: center;
+            margin: 0 50px;
 
             li {
                 display: flex;
@@ -74,7 +75,10 @@ export default {
                 color: white;
                 }
             }
-            
+
+            li:last-child img {
+                    height: 45px;
+            }
         }
     }
 
