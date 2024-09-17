@@ -1,9 +1,14 @@
 <script>
+import ComicsList from './ComicsList.vue';
+
 export default {
     data() {
         return {
             
         }
+    },
+    components: {
+        ComicsList
     }
 }
 </script>
@@ -16,13 +21,13 @@ export default {
             </div>
 
             <div id="catalog">
-
+                <ComicsList/>
             </div>
         </section>
     </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
     #jumbotron {
         height: 550px;
         background-image: url('../assets/img/jumbotron.jpg');
@@ -31,6 +36,7 @@ export default {
 
     #catalog {
         min-height: 600px;
+        padding: 50px 0;
         background-color: #1C1C1C;
     }
 </style>

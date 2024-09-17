@@ -48,7 +48,7 @@ export default {
    </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
     #bonus {
         height: 200px;
         background-color: #0C7CEC;
