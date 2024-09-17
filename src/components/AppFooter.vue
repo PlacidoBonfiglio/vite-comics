@@ -18,16 +18,25 @@ export default {
 
                         <ul>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">Characters</a>
                             </li>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">Comics</a>
                             </li>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">Movies</a>
                             </li>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">TV</a>
+                            </li>
+                            <li>
+                                <a href="#">Games</a>
+                            </li>
+                            <li>
+                                <a href="#">Videos</a>
+                            </li>
+                            <li>
+                                <a href="#">News</a>
                             </li>
                         </ul>
 
@@ -35,16 +44,10 @@ export default {
 
                         <ul>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">Shop DC</a>
                             </li>
                             <li>
-                                <a href="#">blablabla</a>
-                            </li>
-                            <li>
-                                <a href="#">blablabla</a>
-                            </li>
-                            <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">Shop DC Collectibles</a>
                             </li>
                         </ul>
                     </div>
@@ -54,36 +57,38 @@ export default {
 
                         <ul>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">Terms Of Use</a>
                             </li>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">Privacy policy (New)</a>
                             </li>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">Ad Choices</a>
                             </li>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">Advertising</a>
                             </li>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">Jobs</a>
                             </li>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">Subscriptions</a>
                             </li>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">Talent Workshops</a>
                             </li>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">CPSC Certificates</a>
                             </li>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">Ratings</a>
                             </li>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">Shop Help</a>
                             </li>
-                            
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -92,23 +97,26 @@ export default {
 
                         <ul>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">DC</a>
                             </li>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">MAD Magazine</a>
                             </li>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">DC Kids</a>
                             </li>
                             <li>
-                                <a href="#">blablabla</a>
+                                <a href="#">DC Universe</a>
+                            </li>
+                            <li>
+                                <a href="#">DC Power Visa</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="logo-bg">
+            <div class="logo-bg row">
                 <img src="../assets/img/dc-logo-bg.png" alt="">
             </div>
         </section>
@@ -163,35 +171,45 @@ footer {
         padding: 50px 20px;
 
         .info-box {
-            flex-basis: 60%;
+            flex-basis: 40%;
 
             .cols {
-                width: calc(100% / 3);
-            
-                h2 {
+                width: 100%;   
+
+                div{
+                    width: calc(100% / 3);
+
+
+                    h2 {
                     color: white;
                     margin-bottom: 20px;
-                    margin-right: 60px;
-                }
+                    font-size: 1.3rem;
+                    }
 
-                li:last-child {
+                    li:last-child {
                     margin-bottom: 30px;
-                }
+                    }
 
-                a {
+                    a {
                     color: grey;
                     line-height: 25px;
+                    font-size: 0.9rem;
 
-                    &:hover {
-                        color: white;
-                        border-bottom: 1px solid white;
+                        &:hover {
+                            color: white;
+                            border-bottom: 1px solid white;
+                        }
                     }
                 }
+            
+                
             }
         }
 
         .logo-bg {
-            flex-basis: 40%;
+            flex-basis: 60%;
+            justify-content: end;
+            
         }
     }
 

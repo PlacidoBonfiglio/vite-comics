@@ -32,7 +32,7 @@ export default {
 <template>
    <section id="bonus">
     <div class="container">
-        <ul>
+        <ul class="row">
             <li v-for="bonus in bonusLinks">
                 <a href="#">{{ bonus.img }} {{ bonus.name }}</a>
             </li>
@@ -48,12 +48,21 @@ export default {
         height: 200px;
         background-color: #0C7CEC;
 
-        img {
-            height: 60px;
-        }
+        ul {
+            height: 200px;
+            justify-content: space-around;
+            align-items: center;
 
-        a {
+
+            img {
+            height: 60px;
+            }
+
+            a {
             color: white;
+            }
         }
     }
+
+        
 </style>
