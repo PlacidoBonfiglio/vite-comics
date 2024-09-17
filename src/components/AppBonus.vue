@@ -4,27 +4,27 @@ export default {
         return {
             bonusLinks: [
                 {
-                    imgUrl: '../assets/img/buy-comics-digital-comics.png',
+                    imgUrl: 'src/assets/img/buy-comics-digital-comics.png',
                     imgAlt: 'digital comics',
                     name: 'DIGITAL COMICS'
                 },
                 {
-                    imgUrl: '../assets/img/buy-comics-merchandise.png',
+                    imgUrl: '/src/assets/img/buy-comics-merchandise.png',
                     imgAlt: 'merchandise',
                     name: 'DC MERCHANDISE'
                 },
                 {
-                    imgUrl: '../assets/img/buy-comics-subscriptions.png',
+                    imgUrl: 'src/assets/img/buy-comics-subscriptions.png',
                     imgAlt: 'subscription',
                     name: 'SUBSCRIPTION'
                 },
                 {
-                    imgUrl: '../assets/img/buy-comics-shop-locator.png',
+                    imgUrl: 'src/assets/img/buy-comics-shop-locator.png',
                     imgAlt: 'shop locator',
                     name: 'COMIC SHOP LOCATOR'
                 },
                 {
-                    imgUrl: '../assets/img/buy-dc-power-visa.svg',
+                    imgUrl: 'src/assets/img/buy-dc-power-visa.svg',
                     imgAlt: 'power visa',
                     name: 'DC POWER VISA'
                 },
@@ -60,14 +60,21 @@ export default {
             justify-content: space-around;
             align-items: center;
 
+            li {
+                display: flex;
+                align-items: center;
+                
+                img {
+                height: 60px;
+                width: auto;
+                margin-right: 20px;
+                }
 
-            img {
-            height: 60px;
+                a {
+                color: white;
+                }
             }
-
-            a {
-            color: white;
-            }
+            
         }
     }
 
