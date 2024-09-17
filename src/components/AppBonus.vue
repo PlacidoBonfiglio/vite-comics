@@ -68,7 +68,7 @@ export default {
                 img {
                 height: 60px;
                 width: auto;
-                margin-right: 20px;
+                margin-right: 10px;
                 }
 
                 a {
