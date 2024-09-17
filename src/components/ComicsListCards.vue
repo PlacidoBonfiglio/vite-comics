@@ -8,13 +8,13 @@ export default {
   },
 
   props: {
-    imgUrl: {
+    comicsImgUrl: {
         type: String,
         required: true
     },
     comicsPrice: {
         type: String,
-        required: true,
+        required: false,
     },
     comicsSeries: {
         type: String,
@@ -22,7 +22,7 @@ export default {
     },
     comicsType: {
         type: String,
-        required: true,
+        required: false,
     }
   }
 }
@@ -30,13 +30,31 @@ export default {
 </script>
 
 <template>
-    <h1>
-        COMICS CARD
-    </h1>
+    <section id="comics" class="row">
+        <div>
+            <a href="#"><img :src="comicsImgUrl" alt=""></a>
+            <a href="#">{{ comicsSeries }}</a>
+        </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>
-    h1 {
-        color: white;
+    #comics {
+        width: 100%;
+
+        div {
+            text-align: center;
+
+            img {
+                height: 200px;
+                width: 200px;
+                object-fit: cover;
+            }
+
+            a {
+                color: white;
+                text-align: center;
+            }
+        }
     }
 </style>

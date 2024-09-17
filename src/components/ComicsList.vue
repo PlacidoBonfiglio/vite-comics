@@ -90,7 +90,7 @@ export default {
 
 <template>
     <ComicsListCards v-for="(comicsItem, index) in comicsList" :key="index"
-    :imgUrl="comicsItem.thumb"
+    :comicsImgUrl="comicsItem.thumb"
     :comicsPrice="comicsItem.price"
     :comicsSeries="comicsItem.series"
     :comicsType="comicsItem.type"/>
