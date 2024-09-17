@@ -3,15 +3,51 @@ export default {
     data() {
         return {
             navLinks: [
-                    "CHARACTERS",
-                    "COMICS",
-                    "MOVIES",
-                    "TV",
-                    "GAMES",
-                    "COLLECTIBLES",
-                    "FANS",
-                    "NEWS",
-                    "SHOP",
+                {
+                    label: "CHARACTERS",
+                    url: "#",
+                    active: false,
+                },
+                {
+                    label: "COMICS",
+                    url: "#",
+                    active: true,
+                },
+                {
+                    label: "MOVIES",
+                    url: "#",
+                    active: false,
+                },
+                {
+                    label: "TV",
+                    url: "#",
+                    active: false,
+                },
+                {
+                    label: "GAMES",
+                    url: "#",
+                    active: false,
+                },
+                {
+                    label: "COLLECTIBLES",
+                    url: "#",
+                    active: false,
+                },
+                {
+                    label: "FANS",
+                    url: "#",
+                    active: false,
+                },
+                {
+                    label: "NEWS",
+                    url: "#",
+                    active: false,
+                },
+                {
+                    label: "SHOP",
+                    url: "#",
+                    active: false,
+                },
             ]
         }
     }
@@ -27,8 +63,8 @@ export default {
 
             <div class="div-ul">
                 <ul class="row">
-                    <li v-for="navItem in navLinks">
-                        <a href="#">{{ navItem }}</a>
+                    <li v-for="(navItem, index) in navLinks" :key="index" :class="{ active : navItem.active }">
+                        <a href="navItem.url">{{ navItem.label }}</a>
                     </li>
                 </ul>
             </div>
@@ -60,6 +96,11 @@ section {
 
             a {
                 padding-bottom: 62px;
+
+                &.active {
+                    color: #0C7CEC;
+                    border-bottom: 5px solid #0C7CEC;
+                }
 
                 &:hover {
                 color: #0C7CEC;

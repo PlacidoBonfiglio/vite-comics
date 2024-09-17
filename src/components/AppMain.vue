@@ -22,6 +22,10 @@ export default {
 
             <section id="catalog">
                 <div class="container">
+                    <div class="current-series">
+                        <p>CURRENT SERIES</p>
+                    </div>
+
                     <div>
                         <ComicsList/>
                     </div>
@@ -47,6 +51,21 @@ export default {
         padding-left: 20px;
         padding-right: 20px;
         background-color: #1C1C1C;
+
+        .current-series {
+            position: relative;
+
+            p {
+                position: absolute;
+                left: 0;
+                top: -105px;
+                color: white;
+                background-color: #0C7CEC;
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding: 10px 20px;
+            }
+        }
 
         .load-button {
             justify-content: center;
