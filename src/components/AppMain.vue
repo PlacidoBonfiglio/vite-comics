@@ -25,6 +25,10 @@ export default {
                     <div>
                         <ComicsList/>
                     </div>
+
+                    <div class="row load-button">
+                        <button>LOAD MORE</button>
+                    </div>
                 </div>
             </section>
         </section>
@@ -39,11 +43,28 @@ export default {
     }
 
     #catalog {
-        min-height: 800px;
         padding-top: 80px;
         padding-left: 20px;
         padding-right: 20px;
         background-color: #1C1C1C;
+
+        .load-button {
+            justify-content: center;
+
+            button {
+                color: white;
+                font-weight: bold;
+                border: none;
+                padding: 10px 60px;
+                background-color: #0C7CEC;
+                margin-bottom: 30px;
+
+                &:hover {
+                    background-color: rgb(114, 187, 255);
+                    cursor: pointer;
+                }
+            }
+        }
 
         .container div {
             display: flex;
