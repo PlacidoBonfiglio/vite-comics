@@ -21,7 +21,9 @@ export default {
             </div>
 
             <div id="catalog">
-                <ComicsList/>
+                <div class="container">
+                    <ComicsList/>
+                </div>
             </div>
         </section>
     </main>
@@ -36,7 +38,7 @@ export default {
 
     #catalog {
         min-height: 600px;
-        padding: 50px 0;
+        padding: 50px 20px;
         background-color: #1C1C1C;
     }
 </style>
