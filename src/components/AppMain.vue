@@ -11,21 +11,26 @@ export default {
 <template>
     <main>
         <section>
-            <h2>
-                <-- Content goes here -->
-            </h2>
+            <div id="jumbotron">
+
+            </div>
+
+            <div id="catalog">
+
+            </div>
         </section>
     </main>
 </template>
 
 <style scoped>
-    section {
-        text-align: center;
-        background-color: #272727;
+    #jumbotron {
+        height: 550px;
+        background-image: url('../assets/img/jumbotron.jpg');
+        background-size: cover;
+    }
 
-        h2 {
-            color: white;
-            padding: 80px;
-        }
+    #catalog {
+        min-height: 600px;
+        background-color: #1C1C1C;
     }
 </style>
