@@ -32,7 +32,10 @@ export default {
 <template>
     <article>
         <a href="#"><img :src="comicsImgUrl" alt=""></a>
-        <p>{{ comicsSeries }}</p>
+        <div>
+            <p>{{ comicsSeries }}</p>
+        </div>
+        
     </article>
 </template>
 
@@ -54,7 +57,7 @@ export default {
             p {
                 color: white;
                 text-align: center;
-                margin-bottom: 20px;
+                margin-bottom: 50px;
             }
         }
 </style>

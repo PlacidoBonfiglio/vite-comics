@@ -39,7 +39,7 @@ export default {
     }
 
     #catalog {
-        min-height: 600px;
+        min-height: 800px;
         padding-top: 80px;
         padding-left: 20px;
         padding-right: 20px;
@@ -49,7 +49,6 @@ export default {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
         }
     }
 </style>
