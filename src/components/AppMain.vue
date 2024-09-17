@@ -47,7 +47,7 @@ export default {
     }
 
     #catalog {
-        padding-top: 80px;
+        padding-top: 60px;
         padding-left: 20px;
         padding-right: 20px;
         background-color: #1C1C1C;
@@ -58,7 +58,7 @@ export default {
             p {
                 position: absolute;
                 left: 0;
-                top: -105px;
+                top: -85px;
                 color: white;
                 background-color: #0C7CEC;
                 font-size: 1.5rem;
