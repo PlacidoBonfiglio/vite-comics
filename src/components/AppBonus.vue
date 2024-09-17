@@ -4,23 +4,28 @@ export default {
         return {
             bonusLinks: [
                 {
-                    img: '<img src="../assets/img/buy-comics-digital-comics.png" alt="digital comics">',
+                    imgUrl: '../assets/img/buy-comics-digital-comics.png',
+                    imgAlt: 'digital comics',
                     name: 'DIGITAL COMICS'
                 },
                 {
-                    img: '<img src="../assets/img/buy-comics-merchandise.png" alt="merchandise">',
+                    imgUrl: '../assets/img/buy-comics-merchandise.png',
+                    imgAlt: 'merchandise',
                     name: 'DC MERCHANDISE'
                 },
                 {
-                    img: '<img src="../assets/img/buy-comics-subscriptions.png" alt="subscription">',
+                    imgUrl: '../assets/img/buy-comics-subscriptions.png',
+                    imgAlt: 'subscription',
                     name: 'SUBSCRIPTION'
                 },
                 {
-                    img: '<img src="../assets/img/buy-comics-shop-locator.png" alt="shop locator">',
+                    imgUrl: '../assets/img/buy-comics-shop-locator.png',
+                    imgAlt: 'shop locator',
                     name: 'COMIC SHOP LOCATOR'
                 },
                 {
-                    img: '<img src="../assets/img/buy-dc-power-visa.svg" alt="power visa">',
+                    imgUrl: '../assets/img/buy-dc-power-visa.svg',
+                    imgAlt: 'power visa',
                     name: 'DC POWER VISA'
                 },
             ]
@@ -33,12 +38,12 @@ export default {
    <section id="bonus">
     <div class="container">
         <ul class="row">
-            <li v-for="bonus in bonusLinks">
-                <a href="#">{{ bonus.img }} {{ bonus.name }}</a>
+            <li v-for="(bonus, index) in bonusLinks" :key="index">
+                <a href="#"><img :src="bonus.imgUrl" :alt="bonus.imgAlt"></a>
+                <a href="#">{{bonus.name}}</a>
             </li>
         </ul>
     </div>
-    
     
    </section>
 </template>

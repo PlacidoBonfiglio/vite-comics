@@ -167,7 +167,6 @@ footer {
 
     /* ! INFO */
     #info {
-        height: 450px;
         padding: 50px 20px;
 
         .info-box {
@@ -213,8 +212,8 @@ footer {
 
             img {
                 position: absolute;
-                top: -110px;
-
+                top: -150px;
+                height: 650px;
             }
         }
     }
@@ -259,6 +258,7 @@ footer {
 
                 li {
                     margin-right: 20px;
+
                 }
             }
         }
