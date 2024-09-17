@@ -16,15 +16,17 @@ export default {
 <template>
     <main>
         <section>
-            <div id="jumbotron">
+            <section id="jumbotron">
 
-            </div>
+            </section>
 
-            <div id="catalog">
+            <section id="catalog">
                 <div class="container">
-                    <ComicsList/>
+                    <div>
+                        <ComicsList/>
+                    </div>
                 </div>
-            </div>
+            </section>
         </section>
     </main>
 </template>
@@ -38,7 +40,16 @@ export default {
 
     #catalog {
         min-height: 600px;
-        padding: 50px 20px;
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
         background-color: #1C1C1C;
+
+        .container div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
     }
 </style>

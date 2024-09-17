@@ -30,31 +30,31 @@ export default {
 </script>
 
 <template>
-    <section id="comics" class="row">
-        <div>
-            <a href="#"><img :src="comicsImgUrl" alt=""></a>
-            <a href="#">{{ comicsSeries }}</a>
-        </div>
-    </section>
+    <article>
+        <a href="#"><img :src="comicsImgUrl" alt=""></a>
+        <p>{{ comicsSeries }}</p>
+    </article>
 </template>
 
 <style lang="scss" scoped>
-    #comics {
-        width: 100%;
 
-        div {
-            text-align: center;
+    article {
+        width: calc(100% / 6);
 
             img {
-                height: 200px;
                 width: 200px;
+                height: 200px;
                 object-fit: cover;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 15px;
             }
 
-            a {
+            p {
                 color: white;
                 text-align: center;
+                margin-bottom: 20px;
             }
         }
-    }
 </style>
