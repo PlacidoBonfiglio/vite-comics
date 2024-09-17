@@ -47,6 +47,8 @@ export default {
     #bonus {
         height: 200px;
         background-color: #0C7CEC;
+        position: relative;
+        z-index: 1;
 
         ul {
             height: 200px;

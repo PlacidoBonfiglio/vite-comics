@@ -167,7 +167,7 @@ footer {
 
     /* ! INFO */
     #info {
-        min-height: 400px;
+        height: 450px;
         padding: 50px 20px;
 
         .info-box {
@@ -209,7 +209,13 @@ footer {
         .logo-bg {
             flex-basis: 60%;
             justify-content: end;
-            
+            position: relative;
+
+            img {
+                position: absolute;
+                top: -110px;
+
+            }
         }
     }
 
@@ -218,6 +224,8 @@ footer {
     #links {
         min-height: 150px;
         background-color: #303030;
+        position: relative;
+        z-index: 1;
 
         .links-box {
             height: 150px;
